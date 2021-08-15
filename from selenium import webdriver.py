@@ -1,7 +1,7 @@
 import os
 from selenium import webdriver
 from time import sleep
-tumKullaniciler = ["ayserogglu","ozankayaaa2021","irmakinizkahraman"]
+tumKullaniciler = ["ayserogglu","ozankayaaa2021","irmakinizkahraman","burakgundoggan"]
 for kullanici in tumKullaniciler:
     driver = webdriver.Chrome(executable_path=r'C:\Users\Egemen\Downloads\chromedriver.exe')
     driver.get('https://www.instagram.com') #Go to instagram login page.
@@ -55,4 +55,5 @@ for kullanici in tumKullaniciler:
             #cikis = driver.find_element_by_xpath('/html/body/div[6]/div[3]/button').click() #Click exit button
         os.system("taskkill /im chrome.exe /f")     
     except:
+        os.system("taskkill /im chrome.exe /f")
         pass
