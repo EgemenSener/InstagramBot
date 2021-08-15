@@ -1,11 +1,12 @@
 import os
 from selenium import webdriver
 from time import sleep
-driver = webdriver.Chrome(executable_path=r'C:\Users\Egemen\Downloads\chromedriver.exe')
-driver.get('https://www.instagram.com') #Go to instagram login page.
-sleep(2) #Wait for loading page.
 tumKullaniciler = ["ayserogglu","irmakinizkahraman"]
 for kullanici in tumKullaniciler:
+    driver = webdriver.Chrome(executable_path=r'C:\Users\Egemen\Downloads\chromedriver.exe')
+    driver.get('https://www.instagram.com') #Go to instagram login page.
+    sleep(2) #Wait for loading page.
+
     username = driver.find_element_by_name('username').send_keys(kullanici) 
     password = driver.find_element_by_name('password').send_keys('egemen13.')
     girisbutton = driver.find_element_by_xpath('//button[@type="submit"]').click() #Log-in button
