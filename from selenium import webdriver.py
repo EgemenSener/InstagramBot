@@ -4,10 +4,10 @@ driver = webdriver.Chrome(executable_path=r'C:\Users\Egemen\Downloads\chromedriv
 driver.get('https://www.instagram.com') #Go to instagram login page.
 sleep(2) #Wait for loading page.
 
-username = driver.find_element_by_name('username').send_keys('burakgundoggan') 
+username = driver.find_element_by_name('username').send_keys('irmakinizkahraman') 
 password = driver.find_element_by_name('password').send_keys('egemen13.')
 girisbutton = driver.find_element_by_xpath('//button[@type="submit"]').click() #Log-in button
-sleep(2) 
+sleep(3) 
 
 simdidegil = driver.find_element_by_xpath('//button[contains(text(), "Şimdi Değil")]').click() #Answer to 'save your password?'
 sleep(1.5)
@@ -44,7 +44,7 @@ for i in tumKutular:
 for i in tumLinkler:
     i.click() #Click link and open photo
     sleep(2)
-    begenbuton = driver.find_element_by_xpath('/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button') 
+    begenbuton = driver.find_element_by_xpath('/html/body/div[6]/div[2]/div/article/div[3]/section[1]/span[1]/button') 
     begenbuton.click() #Click heart button
     sleep(0.2)
-    cikis = driver.find_element_by_xpath('/html/body/div[4]/div[3]/button').click() #Click exit button
+    cikis = driver.find_element_by_xpath('/html/body/div[6]/div[3]/button').click() #Click exit button
