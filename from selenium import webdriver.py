@@ -14,9 +14,9 @@ sleep(1.5)
 simdidegil = driver.find_element_by_xpath('//button[contains(text(), "Şimdi Değil")]').click() #Answer to 'open notification?'
 sleep(0.5)
 
-aramakutusu = driver.find_element_by_xpath('//input[@type="text"]').send_keys('HEDEF HESAP') #The search bar that we type target username
+aramakutusu = driver.find_element_by_xpath('//input[@type="text"]').send_keys('egemensenerr') #The search bar that we type target username
 sleep(2) #Wait for loading suggestions
-profile = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]').click() #Click on the first suggestion
+profile = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[3]/div/div[2]/div/div[1]/a').click() #Click on the first suggestion
 sleep(3) #Wait for loading target profile
 
 def scrollAllWayDown():
