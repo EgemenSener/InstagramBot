@@ -49,6 +49,7 @@ for kullanici in tumKullaniciler:
         sleep(2)
         begenbuton = driver.find_element_by_xpath('/html/body/div[6]/div[2]/div/article/div[3]/section[1]/span[1]/button') 
         begenbuton.click() #Click heart button
-        sleep(0.2)
-        cikis = driver.find_element_by_xpath('/html/body/div[6]/div[3]/button').click() #Click exit button
+        sleep(1)
+        break
+        #cikis = driver.find_element_by_xpath('/html/body/div[6]/div[3]/button').click() #Click exit button
     os.system("taskkill /im chrome.exe /f")     
