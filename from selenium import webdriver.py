@@ -1,14 +1,14 @@
 import os
 from selenium import webdriver
 from time import sleep
-tumKullaniciler = ["ayserogglu","ozankayaaa2021","irmakinizkahraman","burakgundoggan"]
+tumKullaniciler = ["enter here username using , between users"] #for the program to run please enter usernames
 for kullanici in tumKullaniciler:
     driver = webdriver.Chrome(executable_path=r'C:\Users\Egemen\Downloads\chromedriver.exe')
     driver.get('https://www.instagram.com') #Go to instagram login page.
     sleep(2) #Wait for loading page.
 
     username = driver.find_element_by_name('username').send_keys(kullanici) 
-    password = driver.find_element_by_name('password').send_keys('egemen13.')
+    password = driver.find_element_by_name('password').send_keys('') #for the program the run please enter password
     try:
         girisbutton = driver.find_element_by_xpath('//button[@type="submit"]').click() #Log-in button
         sleep(3) 
